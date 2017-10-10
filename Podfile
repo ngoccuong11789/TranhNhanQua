@@ -12,7 +12,7 @@ target 'TranhNhanQua' do
 	pod 'AssistantKit'
 	pod 'SnapKit', '~> 3.2.0'
 	pod 'Firebase'
-	pod 'Firebase/Messaging'
 	pod 'Firebase/Core'
 	pod 'Siren'
+	pod 'FirebaseMessaging', '2.0.0'
 end
