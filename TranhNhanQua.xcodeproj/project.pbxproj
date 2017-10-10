@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4C585C1F530CE200C1302A /* TranhNhanQua1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C585B1F530CE200C1302A /* TranhNhanQua1VC.swift */; };
+		AE4C585E1F53142800C1302A /* TranhNhanQua2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C585D1F53142800C1302A /* TranhNhanQua2VC.swift */; };
+		AE4C58601F53170100C1302A /* TranhNhanQua3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C585F1F53170100C1302A /* TranhNhanQua3VC.swift */; };
+		AE4C58621F53175000C1302A /* TranhNhanQua4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C58611F53175000C1302A /* TranhNhanQua4VC.swift */; };
 		AE636C241F52955300364CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE636C231F52955300364CF3 /* AppDelegate.swift */; };
 		AE636C261F52955300364CF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE636C251F52955300364CF3 /* ViewController.swift */; };
 		AE636C291F52955300364CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE636C271F52955300364CF3 /* Main.storyboard */; };
 		AE636C2B1F52955300364CF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE636C2A1F52955300364CF3 /* Assets.xcassets */; };
 		AE636C2E1F52955300364CF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE636C2C1F52955300364CF3 /* LaunchScreen.storyboard */; };
+		AE636C3E1F52994F00364CF3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE636C3D1F52994F00364CF3 /* SWRevealViewController.m */; };
+		AE636C401F529E6C00364CF3 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE636C3F1F529E6C00364CF3 /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE4C585B1F530CE200C1302A /* TranhNhanQua1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua1VC.swift; sourceTree = "<group>"; };
+		AE4C585D1F53142800C1302A /* TranhNhanQua2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua2VC.swift; sourceTree = "<group>"; };
+		AE4C585F1F53170100C1302A /* TranhNhanQua3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua3VC.swift; sourceTree = "<group>"; };
+		AE4C58611F53175000C1302A /* TranhNhanQua4VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua4VC.swift; sourceTree = "<group>"; };
 		AE636C201F52955300364CF3 /* NhanQua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhanQua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE636C231F52955300364CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE636C251F52955300364CF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE636C251F52955300364CF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		AE636C281F52955300364CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE636C2A1F52955300364CF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE636C2D1F52955300364CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE636C2F1F52955300364CF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE636C3B1F52994F00364CF3 /* NhanQua-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NhanQua-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE636C3C1F52994F00364CF3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		AE636C3D1F52994F00364CF3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		AE636C3F1F529E6C00364CF3 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,54 @@
 		AE636C221F52955300364CF3 /* NhanQua */ = {
 			isa = PBXGroup;
 			children = (
+				AE636C3A1F52993700364CF3 /* Library */,
+				AE636C391F52963900364CF3 /* View */,
+				AE636C381F52963200364CF3 /* Controller */,
+				AE636C371F52962900364CF3 /* Model */,
 				AE636C231F52955300364CF3 /* AppDelegate.swift */,
-				AE636C251F52955300364CF3 /* ViewController.swift */,
 				AE636C271F52955300364CF3 /* Main.storyboard */,
 				AE636C2A1F52955300364CF3 /* Assets.xcassets */,
 				AE636C2C1F52955300364CF3 /* LaunchScreen.storyboard */,
 				AE636C2F1F52955300364CF3 /* Info.plist */,
 			);
 			path = NhanQua;
+			sourceTree = "<group>";
+		};
+		AE636C371F52962900364CF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE636C381F52963200364CF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE636C251F52955300364CF3 /* ViewController.swift */,
+				AE636C3F1F529E6C00364CF3 /* MenuTableViewController.swift */,
+				AE4C585B1F530CE200C1302A /* TranhNhanQua1VC.swift */,
+				AE4C585D1F53142800C1302A /* TranhNhanQua2VC.swift */,
+				AE4C585F1F53170100C1302A /* TranhNhanQua3VC.swift */,
+				AE4C58611F53175000C1302A /* TranhNhanQua4VC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE636C391F52963900364CF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE636C3A1F52993700364CF3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AE636C3C1F52994F00364CF3 /* SWRevealViewController.h */,
+				AE636C3D1F52994F00364CF3 /* SWRevealViewController.m */,
+				AE636C3B1F52994F00364CF3 /* NhanQua-Bridging-Header.h */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +151,7 @@
 					AE636C1F1F52955300364CF3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9M89LZG9KX;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,8 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE636C401F529E6C00364CF3 /* MenuTableViewController.swift in Sources */,
 				AE636C261F52955300364CF3 /* ViewController.swift in Sources */,
 				AE636C241F52955300364CF3 /* AppDelegate.swift in Sources */,
+				AE4C585C1F530CE200C1302A /* TranhNhanQua1VC.swift in Sources */,
+				AE4C58601F53170100C1302A /* TranhNhanQua3VC.swift in Sources */,
+				AE4C585E1F53142800C1302A /* TranhNhanQua2VC.swift in Sources */,
+				AE4C58621F53175000C1302A /* TranhNhanQua4VC.swift in Sources */,
+				AE636C3E1F52994F00364CF3 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +324,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9M89LZG9KX;
 				INFOPLIST_FILE = NhanQua/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ReaWonKim.NhanQua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NhanQua/Library/NhanQua-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +340,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 9M89LZG9KX;
 				INFOPLIST_FILE = NhanQua/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ReaWonKim.NhanQua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NhanQua/Library/NhanQua-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +370,7 @@
 				AE636C341F52955300364CF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
