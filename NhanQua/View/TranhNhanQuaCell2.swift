@@ -10,6 +10,7 @@ import UIKit
 
 class TranhNhanQuaCell2: UITableViewCell {
 
+    @IBOutlet weak var imageView2: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -7,29 +7,29 @@
 //
 
 import UIKit
+import SMWebView
+import SVProgressHUD
+class ReaWonKimVC: BaseViewController {
 
-class ReaWonKimVC: UIViewController {
-
+    @IBOutlet weak var menuBtn: UIBarButtonItem!
+    var loadingURLString = "http://www.reawonkim.net/"
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if revealViewController() != nil {
+            menuBtn.target = self.revealViewController()
+            menuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController().rearViewRevealWidth = 275
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        let webView = SMWebView()
+        loadingWebView(webView: webView, stringURL: loadingURLString)
+        webView.frame = UIScreen.main.bounds
+        self.view.addSubview(webView)
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+

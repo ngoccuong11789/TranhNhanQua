@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0AC25F1F5EE9FC00FA76DB /* TranhNhanQuaCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AC25E1F5EE9FC00FA76DB /* TranhNhanQuaCell2.swift */; };
+		AE0AC2611F5EEEFD00FA76DB /* TranhNhanQuaCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AC2601F5EEEFD00FA76DB /* TranhNhanQuaCell3.swift */; };
+		AE0AC2631F5EF1E500FA76DB /* TranhNhanQuaCell4.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0AC2621F5EF1E500FA76DB /* TranhNhanQuaCell4.swift */; };
+		AE43E52E1F643001007D8EED /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE43E52D1F643001007D8EED /* iCarousel.m */; };
+		AE43E5301F64319C007D8EED /* ContributeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE43E52F1F64319C007D8EED /* ContributeVC.swift */; };
 		AE4C585C1F530CE200C1302A /* TranhNhanQua1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C585B1F530CE200C1302A /* TranhNhanQua1VC.swift */; };
 		AE4C585E1F53142800C1302A /* TranhNhanQua2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C585D1F53142800C1302A /* TranhNhanQua2VC.swift */; };
 		AE4C58601F53170100C1302A /* TranhNhanQua3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C585F1F53170100C1302A /* TranhNhanQua3VC.swift */; };
 		AE4C58621F53175000C1302A /* TranhNhanQua4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C58611F53175000C1302A /* TranhNhanQua4VC.swift */; };
+		AE553C7B1F619F690012BE6D /* KenhDocTruyenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE553C7A1F619F690012BE6D /* KenhDocTruyenVC.swift */; };
+		AE553C7D1F61AAAD0012BE6D /* ReaWonKimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE553C7C1F61AAAD0012BE6D /* ReaWonKimVC.swift */; };
+		AE60AC371F59C2BE00299735 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60AC361F59C2BE00299735 /* BaseViewController.swift */; };
 		AE636C241F52955300364CF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE636C231F52955300364CF3 /* AppDelegate.swift */; };
 		AE636C261F52955300364CF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE636C251F52955300364CF3 /* ViewController.swift */; };
 		AE636C291F52955300364CF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE636C271F52955300364CF3 /* Main.storyboard */; };
@@ -18,14 +26,32 @@
 		AE636C2E1F52955300364CF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE636C2C1F52955300364CF3 /* LaunchScreen.storyboard */; };
 		AE636C3E1F52994F00364CF3 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE636C3D1F52994F00364CF3 /* SWRevealViewController.m */; };
 		AE636C401F529E6C00364CF3 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE636C3F1F529E6C00364CF3 /* MenuTableViewController.swift */; };
+		AE74D4891F5698A600436BF9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE74D48B1F5698A600436BF9 /* Localizable.strings */; };
+		AE74D48F1F56A3C100436BF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE74D4911F56A3C100436BF9 /* InfoPlist.strings */; };
+		AEA75D621F8BBE8600028221 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA75D611F8BBE8500028221 /* GoogleService-Info.plist */; };
+		AEA7D55E1F545F0E00D82842 /* TranhNhanQuaCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA7D55D1F545F0E00D82842 /* TranhNhanQuaCell1.swift */; };
+		D5DFAEF9C750DEDDBAE7B073 /* Pods_TranhNhanQua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A317CF488E93507B7BDCCFCA /* Pods_TranhNhanQua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1151A1E33980792E36892557 /* Pods-TranhNhanQua.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranhNhanQua.release.xcconfig"; path = "Pods/Target Support Files/Pods-TranhNhanQua/Pods-TranhNhanQua.release.xcconfig"; sourceTree = "<group>"; };
+		614EB9D1800E3918B8ECC8A1 /* Pods-TranhNhanQua.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TranhNhanQua.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TranhNhanQua/Pods-TranhNhanQua.debug.xcconfig"; sourceTree = "<group>"; };
+		A317CF488E93507B7BDCCFCA /* Pods_TranhNhanQua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TranhNhanQua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0AC25E1F5EE9FC00FA76DB /* TranhNhanQuaCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQuaCell2.swift; sourceTree = "<group>"; };
+		AE0AC2601F5EEEFD00FA76DB /* TranhNhanQuaCell3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQuaCell3.swift; sourceTree = "<group>"; };
+		AE0AC2621F5EF1E500FA76DB /* TranhNhanQuaCell4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQuaCell4.swift; sourceTree = "<group>"; };
+		AE43E52C1F643001007D8EED /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		AE43E52D1F643001007D8EED /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		AE43E52F1F64319C007D8EED /* ContributeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContributeVC.swift; sourceTree = "<group>"; };
+		AE47D6E21F565C63009ECC5B /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AE4C585B1F530CE200C1302A /* TranhNhanQua1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua1VC.swift; sourceTree = "<group>"; };
 		AE4C585D1F53142800C1302A /* TranhNhanQua2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua2VC.swift; sourceTree = "<group>"; };
 		AE4C585F1F53170100C1302A /* TranhNhanQua3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua3VC.swift; sourceTree = "<group>"; };
 		AE4C58611F53175000C1302A /* TranhNhanQua4VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQua4VC.swift; sourceTree = "<group>"; };
-		AE636C201F52955300364CF3 /* NhanQua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhanQua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE553C7A1F619F690012BE6D /* KenhDocTruyenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KenhDocTruyenVC.swift; sourceTree = "<group>"; };
+		AE553C7C1F61AAAD0012BE6D /* ReaWonKimVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaWonKimVC.swift; sourceTree = "<group>"; };
+		AE60AC361F59C2BE00299735 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AE636C201F52955300364CF3 /* TranhNhanQua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranhNhanQua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE636C231F52955300364CF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE636C251F52955300364CF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		AE636C281F52955300364CF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,6 +62,18 @@
 		AE636C3C1F52994F00364CF3 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		AE636C3D1F52994F00364CF3 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		AE636C3F1F529E6C00364CF3 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		AE74D48A1F5698A600436BF9 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE74D48C1F5698A900436BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE74D4901F56A3C100436BF9 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE74D4921F56A3C500436BF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE74D4961F56BD9E00436BF9 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		AEA1A5751F8C4BA3007B0625 /* aps_development.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_development.cer; sourceTree = "<group>"; };
+		AEA1A5761F8C4BA3007B0625 /* Certificates.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Certificates.p12; sourceTree = "<group>"; };
+		AEA1A5771F8C4BA3007B0625 /* CertificateSigningRequest.certSigningRequest */ = {isa = PBXFileReference; lastKnownFileType = text; path = CertificateSigningRequest.certSigningRequest; sourceTree = "<group>"; };
+		AEA1A5781F8C4BA3007B0625 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AEA75D601F8BB78300028221 /* TranhNhanQua.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranhNhanQua.entitlements; sourceTree = "<group>"; };
+		AEA75D611F8BBE8500028221 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AEA7D55D1F545F0E00D82842 /* TranhNhanQuaCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQuaCell1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,24 +81,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DFAEF9C750DEDDBAE7B073 /* Pods_TranhNhanQua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1735430734F44AC53D6DD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				614EB9D1800E3918B8ECC8A1 /* Pods-TranhNhanQua.debug.xcconfig */,
+				1151A1E33980792E36892557 /* Pods-TranhNhanQua.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AB647B01FAED9E833C39F294 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A317CF488E93507B7BDCCFCA /* Pods_TranhNhanQua.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE636C171F52955300364CF3 = {
 			isa = PBXGroup;
 			children = (
+				AEA75D601F8BB78300028221 /* TranhNhanQua.entitlements */,
+				AE74D4911F56A3C100436BF9 /* InfoPlist.strings */,
+				AE74D48B1F5698A600436BF9 /* Localizable.strings */,
 				AE636C221F52955300364CF3 /* NhanQua */,
 				AE636C211F52955300364CF3 /* Products */,
+				0B1735430734F44AC53D6DD3 /* Pods */,
+				AB647B01FAED9E833C39F294 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		AE636C211F52955300364CF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE636C201F52955300364CF3 /* NhanQua.app */,
+				AE636C201F52955300364CF3 /* TranhNhanQua.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,13 +129,15 @@
 		AE636C221F52955300364CF3 /* NhanQua */ = {
 			isa = PBXGroup;
 			children = (
+				AEA75D611F8BBE8500028221 /* GoogleService-Info.plist */,
+				AEA1A5741F8C4BA3007B0625 /* Certificate */,
 				AE636C3A1F52993700364CF3 /* Library */,
 				AE636C391F52963900364CF3 /* View */,
 				AE636C381F52963200364CF3 /* Controller */,
 				AE636C371F52962900364CF3 /* Model */,
 				AE636C231F52955300364CF3 /* AppDelegate.swift */,
-				AE636C271F52955300364CF3 /* Main.storyboard */,
 				AE636C2A1F52955300364CF3 /* Assets.xcassets */,
+				AE636C271F52955300364CF3 /* Main.storyboard */,
 				AE636C2C1F52955300364CF3 /* LaunchScreen.storyboard */,
 				AE636C2F1F52955300364CF3 /* Info.plist */,
 			);
@@ -97,6 +160,10 @@
 				AE4C585D1F53142800C1302A /* TranhNhanQua2VC.swift */,
 				AE4C585F1F53170100C1302A /* TranhNhanQua3VC.swift */,
 				AE4C58611F53175000C1302A /* TranhNhanQua4VC.swift */,
+				AE60AC361F59C2BE00299735 /* BaseViewController.swift */,
+				AE553C7A1F619F690012BE6D /* KenhDocTruyenVC.swift */,
+				AE553C7C1F61AAAD0012BE6D /* ReaWonKimVC.swift */,
+				AE43E52F1F64319C007D8EED /* ContributeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,6 +171,10 @@
 		AE636C391F52963900364CF3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AEA7D55D1F545F0E00D82842 /* TranhNhanQuaCell1.swift */,
+				AE0AC25E1F5EE9FC00FA76DB /* TranhNhanQuaCell2.swift */,
+				AE0AC2601F5EEEFD00FA76DB /* TranhNhanQuaCell3.swift */,
+				AE0AC2621F5EF1E500FA76DB /* TranhNhanQuaCell4.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,28 +185,44 @@
 				AE636C3C1F52994F00364CF3 /* SWRevealViewController.h */,
 				AE636C3D1F52994F00364CF3 /* SWRevealViewController.m */,
 				AE636C3B1F52994F00364CF3 /* NhanQua-Bridging-Header.h */,
+				AE43E52C1F643001007D8EED /* iCarousel.h */,
+				AE43E52D1F643001007D8EED /* iCarousel.m */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		AEA1A5741F8C4BA3007B0625 /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				AEA1A5751F8C4BA3007B0625 /* aps_development.cer */,
+				AEA1A5761F8C4BA3007B0625 /* Certificates.p12 */,
+				AEA1A5771F8C4BA3007B0625 /* CertificateSigningRequest.certSigningRequest */,
+				AEA1A5781F8C4BA3007B0625 /* GoogleService-Info.plist */,
+			);
+			path = Certificate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE636C1F1F52955300364CF3 /* NhanQua */ = {
+		AE636C1F1F52955300364CF3 /* TranhNhanQua */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE636C321F52955300364CF3 /* Build configuration list for PBXNativeTarget "NhanQua" */;
+			buildConfigurationList = AE636C321F52955300364CF3 /* Build configuration list for PBXNativeTarget "TranhNhanQua" */;
 			buildPhases = (
+				9EAF13334B43710063409A9C /* [CP] Check Pods Manifest.lock */,
 				AE636C1C1F52955300364CF3 /* Sources */,
 				AE636C1D1F52955300364CF3 /* Frameworks */,
 				AE636C1E1F52955300364CF3 /* Resources */,
+				11C7ADBA649F0A19F5C1430E /* [CP] Embed Pods Frameworks */,
+				5D0EF95182AB8133E0C79A7D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NhanQua;
+			name = TranhNhanQua;
 			productName = NhanQua;
-			productReference = AE636C201F52955300364CF3 /* NhanQua.app */;
+			productReference = AE636C201F52955300364CF3 /* TranhNhanQua.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -153,23 +240,29 @@
 						DevelopmentTeam = 9M89LZG9KX;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = AE636C1B1F52955300364CF3 /* Build configuration list for PBXProject "NhanQua" */;
+			buildConfigurationList = AE636C1B1F52955300364CF3 /* Build configuration list for PBXProject "TranhNhanQua" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = AE636C171F52955300364CF3;
 			productRefGroup = AE636C211F52955300364CF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE636C1F1F52955300364CF3 /* NhanQua */,
+				AE636C1F1F52955300364CF3 /* TranhNhanQua */,
 			);
 		};
 /* End PBXProject section */
@@ -180,12 +273,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE636C2E1F52955300364CF3 /* LaunchScreen.storyboard in Resources */,
+				AE74D4891F5698A600436BF9 /* Localizable.strings in Resources */,
 				AE636C2B1F52955300364CF3 /* Assets.xcassets in Resources */,
 				AE636C291F52955300364CF3 /* Main.storyboard in Resources */,
+				AE74D48F1F56A3C100436BF9 /* InfoPlist.strings in Resources */,
+				AEA75D621F8BBE8600028221 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11C7ADBA649F0A19F5C1430E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TranhNhanQua/Pods-TranhNhanQua-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D0EF95182AB8133E0C79A7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TranhNhanQua/Pods-TranhNhanQua-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EAF13334B43710063409A9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE636C1C1F52955300364CF3 /* Sources */ = {
@@ -194,12 +338,21 @@
 			files = (
 				AE636C401F529E6C00364CF3 /* MenuTableViewController.swift in Sources */,
 				AE636C261F52955300364CF3 /* ViewController.swift in Sources */,
+				AEA7D55E1F545F0E00D82842 /* TranhNhanQuaCell1.swift in Sources */,
 				AE636C241F52955300364CF3 /* AppDelegate.swift in Sources */,
 				AE4C585C1F530CE200C1302A /* TranhNhanQua1VC.swift in Sources */,
+				AE60AC371F59C2BE00299735 /* BaseViewController.swift in Sources */,
+				AE553C7B1F619F690012BE6D /* KenhDocTruyenVC.swift in Sources */,
+				AE0AC2611F5EEEFD00FA76DB /* TranhNhanQuaCell3.swift in Sources */,
 				AE4C58601F53170100C1302A /* TranhNhanQua3VC.swift in Sources */,
 				AE4C585E1F53142800C1302A /* TranhNhanQua2VC.swift in Sources */,
 				AE4C58621F53175000C1302A /* TranhNhanQua4VC.swift in Sources */,
+				AE43E5301F64319C007D8EED /* ContributeVC.swift in Sources */,
+				AE0AC2631F5EF1E500FA76DB /* TranhNhanQuaCell4.swift in Sources */,
+				AE553C7D1F61AAAD0012BE6D /* ReaWonKimVC.swift in Sources */,
+				AE43E52E1F643001007D8EED /* iCarousel.m in Sources */,
 				AE636C3E1F52994F00364CF3 /* SWRevealViewController.m in Sources */,
+				AE0AC25F1F5EE9FC00FA76DB /* TranhNhanQuaCell2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +363,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AE636C281F52955300364CF3 /* Base */,
+				AE74D4961F56BD9E00436BF9 /* vi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -218,8 +372,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				AE636C2D1F52955300364CF3 /* Base */,
+				AE47D6E21F565C63009ECC5B /* vi */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE74D48B1F5698A600436BF9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE74D48A1F5698A600436BF9 /* vi */,
+				AE74D48C1F5698A900436BF9 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AE74D4911F56A3C100436BF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE74D4901F56A3C100436BF9 /* vi */,
+				AE74D4921F56A3C500436BF9 /* Base */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -229,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -280,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -322,13 +497,16 @@
 		};
 		AE636C331F52955300364CF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614EB9D1800E3918B8ECC8A1 /* Pods-TranhNhanQua.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TranhNhanQua.entitlements;
 				DEVELOPMENT_TEAM = 9M89LZG9KX;
 				INFOPLIST_FILE = NhanQua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ReaWonKim.NhanQua;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReaWonKim.NhanQua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NhanQua/Library/NhanQua-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -338,13 +516,16 @@
 		};
 		AE636C341F52955300364CF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1151A1E33980792E36892557 /* Pods-TranhNhanQua.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TranhNhanQua.entitlements;
 				DEVELOPMENT_TEAM = 9M89LZG9KX;
 				INFOPLIST_FILE = NhanQua/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ReaWonKim.NhanQua;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReaWonKim.NhanQua;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NhanQua/Library/NhanQua-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -354,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE636C1B1F52955300364CF3 /* Build configuration list for PBXProject "NhanQua" */ = {
+		AE636C1B1F52955300364CF3 /* Build configuration list for PBXProject "TranhNhanQua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE636C301F52955300364CF3 /* Debug */,
@@ -363,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE636C321F52955300364CF3 /* Build configuration list for PBXNativeTarget "NhanQua" */ = {
+		AE636C321F52955300364CF3 /* Build configuration list for PBXNativeTarget "TranhNhanQua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE636C331F52955300364CF3 /* Debug */,

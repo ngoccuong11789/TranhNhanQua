@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE636C1F1F52955300364CF3"
-               BuildableName = "NhanQua.app"
-               BlueprintName = "NhanQua"
-               ReferencedContainer = "container:NhanQua.xcodeproj">
+               BuildableName = "TranhNhanQua.app"
+               BlueprintName = "TranhNhanQua"
+               ReferencedContainer = "container:TranhNhanQua.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE636C1F1F52955300364CF3"
-            BuildableName = "NhanQua.app"
-            BlueprintName = "NhanQua"
-            ReferencedContainer = "container:NhanQua.xcodeproj">
+            BuildableName = "TranhNhanQua.app"
+            BlueprintName = "TranhNhanQua"
+            ReferencedContainer = "container:TranhNhanQua.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE636C1F1F52955300364CF3"
-            BuildableName = "NhanQua.app"
-            BlueprintName = "NhanQua"
-            ReferencedContainer = "container:NhanQua.xcodeproj">
+            BuildableName = "TranhNhanQua.app"
+            BlueprintName = "TranhNhanQua"
+            ReferencedContainer = "container:TranhNhanQua.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE636C1F1F52955300364CF3"
-            BuildableName = "NhanQua.app"
-            BlueprintName = "NhanQua"
-            ReferencedContainer = "container:NhanQua.xcodeproj">
+            BuildableName = "TranhNhanQua.app"
+            BlueprintName = "TranhNhanQua"
+            ReferencedContainer = "container:TranhNhanQua.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
