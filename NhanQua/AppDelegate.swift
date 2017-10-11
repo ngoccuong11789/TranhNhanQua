@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var navigationController: UINavigationController?
     let gcmMessageIDKey = "gcm.message_id"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -134,6 +135,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Print full message.
         print(userInfo)
+        guard let value = userInfo["key"] as? String else {
+            return
+        }
+        print("User Info key : \(value)")
+        
+        //Navigate to VC
+        guard let navigationController = navigationController else {return}
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let VC1 = storyboard.instantiateViewController(withIdentifier: "VC1")
+        if value == "VC1" {
+            print("VC1")
+            
+            navigationController.viewControllers.insert(VC1, at: 0)
+            NotificationCenter.default.post(name: notificationName1, object: nil)
+        }else if value == "VC2"{
+            print("VC2")
+            let VC2 = storyboard.instantiateViewController(withIdentifier: "VC2")
+            //navigationController.viewControllers.insert(VC1, at: 0)
+            navigationController.viewControllers.insert(VC2, at: 0)
+            //NotificationCenter.default.post(name: notificationName1, object: nil)
+        }
         
         completionHandler(UIBackgroundFetchResult.newData)
     }

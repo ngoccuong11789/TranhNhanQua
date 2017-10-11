@@ -30,6 +30,7 @@
 		AE74D48F1F56A3C100436BF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE74D4911F56A3C100436BF9 /* InfoPlist.strings */; };
 		AEA75D621F8BBE8600028221 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEA75D611F8BBE8500028221 /* GoogleService-Info.plist */; };
 		AEA7D55E1F545F0E00D82842 /* TranhNhanQuaCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA7D55D1F545F0E00D82842 /* TranhNhanQuaCell1.swift */; };
+		AEEF2FE81F8E5703001F222D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEF2FE71F8E5703001F222D /* Utility.swift */; };
 		D5DFAEF9C750DEDDBAE7B073 /* Pods_TranhNhanQua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A317CF488E93507B7BDCCFCA /* Pods_TranhNhanQua.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		AEA75D601F8BB78300028221 /* TranhNhanQua.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranhNhanQua.entitlements; sourceTree = "<group>"; };
 		AEA75D611F8BBE8500028221 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AEA7D55D1F545F0E00D82842 /* TranhNhanQuaCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranhNhanQuaCell1.swift; sourceTree = "<group>"; };
+		AEEF2FE71F8E5703001F222D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				AE636C271F52955300364CF3 /* Main.storyboard */,
 				AE636C2C1F52955300364CF3 /* LaunchScreen.storyboard */,
 				AE636C2F1F52955300364CF3 /* Info.plist */,
+				AEEF2FE71F8E5703001F222D /* Utility.swift */,
 			);
 			path = NhanQua;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			files = (
 				AE636C401F529E6C00364CF3 /* MenuTableViewController.swift in Sources */,
 				AE636C261F52955300364CF3 /* ViewController.swift in Sources */,
+				AEEF2FE81F8E5703001F222D /* Utility.swift in Sources */,
 				AEA7D55E1F545F0E00D82842 /* TranhNhanQuaCell1.swift in Sources */,
 				AE636C241F52955300364CF3 /* AppDelegate.swift in Sources */,
 				AE4C585C1F530CE200C1302A /* TranhNhanQua1VC.swift in Sources */,

@@ -25,6 +25,9 @@ class TranhNhanQua1VC: BaseViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(TranhNhanQua1VC.pushToVC2), name: notificationName1, object: nil)
+        
         // Do any additional setup after loading the view.
         if revealViewController() != nil {
             menuBtn.target = self.revealViewController()
@@ -43,6 +46,10 @@ class TranhNhanQua1VC: BaseViewController {
         animateTable(tableView: tableView)
     }
     
+    func pushToVC2() {
+        performSegue(withIdentifier: "pushToVC2", sender: nil)
+        
+    }
 }
 
 extension TranhNhanQua1VC: UITableViewDelegate, UITableViewDataSource {
