@@ -140,21 +140,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         print("User Info key : \(value)")
         
+        
         //Navigate to VC
-        guard let navigationController = navigationController else {return}
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let VC1 = storyboard.instantiateViewController(withIdentifier: "VC1")
         if value == "VC1" {
             print("VC1")
+            //self.window?.rootViewController  = VC1
+            let navController = UINavigationController.init(rootViewController: VC1)
             
-            navigationController.viewControllers.insert(VC1, at: 0)
-            NotificationCenter.default.post(name: notificationName1, object: nil)
+            if let window = self.window, let rootViewController = window.rootViewController {
+                var currentController = rootViewController
+                while let presentedController = currentController.presentedViewController {
+                    currentController = presentedController
+                }
+                currentController.present(navController, animated: true, completion: nil)
+            }
         }else if value == "VC2"{
             print("VC2")
             let VC2 = storyboard.instantiateViewController(withIdentifier: "VC2")
-            //navigationController.viewControllers.insert(VC1, at: 0)
-            navigationController.viewControllers.insert(VC2, at: 0)
-            //NotificationCenter.default.post(name: notificationName1, object: nil)
+            self.window?.rootViewController  = VC2
+            
         }
         
         completionHandler(UIBackgroundFetchResult.newData)

@@ -9,19 +9,40 @@
 import UIKit
 import SVProgressHUD
 import AssistantKit
-class TranhNhanQua4VC: BaseViewController {
+import RxSwift
+import RxCocoa
+import AVFoundation
+import MediaPlayer
+class TranhNhanQua4VC: BaseViewController, UITableViewDelegate {
 
+    @IBOutlet weak var sliderAudio: SliderMaterial!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var menuBarBtn: UIBarButtonItem!
+    fileprivate var isSliding = false
+    fileprivate let SLIDER_UPDATE_DURATION = 0.2
+    fileprivate var timePlayCurrent = TimeInterval()
+    fileprivate var timer: Timer?
+    var avAudioPlayer : AVAudioPlayer!
     var imageURLs = [String]()
     let cellSpacingHeight: CGFloat = 10
     let device = Device.type
+    let disposeBag = DisposeBag()
+    var songName = ""
+    let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, String>>(
+        configureCell: { (_, tv, indexPath, element) in
+            let cell = tv.dequeueReusableCell(withIdentifier: "cell")!
+            cell.textLabel?.text = "\(element)"
+            
+            return cell
+    },
+        titleForHeaderInSection: { dataSource, sectionIndex in
+            return dataSource[sectionIndex].model
+    }
+    )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        tableView.delegate = self
-        tableView.dataSource = self
         // Do any additional setup after loading the view.
         if revealViewController() != nil {
             menuBarBtn.target = self.revealViewController()
@@ -30,7 +51,50 @@ class TranhNhanQua4VC: BaseViewController {
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
         
-        imageURLs = ["https://1.bp.blogspot.com/-1mykOgWmbS4/Wa55vfQBMUI/AAAAAAAABrs/F_SJGjn9xjMhFOOMEWgN3mo8CCmdYuqJQCLcBGAs/s1600/31.png", "https://2.bp.blogspot.com/-KPR834GShvQ/Wa55vWOrn4I/AAAAAAAABrw/f73v4IQoTRwfRo52kcy_DpdVtY01PZINgCLcBGAs/s1600/32.png", "https://3.bp.blogspot.com/-cRlyANjGkds/Wa55v2M40UI/AAAAAAAABr0/FwXIfZ4Mv64Rn7oA1-K4lRSJxOfdM_iIACLcBGAs/s1600/33.png", "https://1.bp.blogspot.com/-d0xpcmYO3FU/Wa55wGQ1WxI/AAAAAAAABr4/oysAe9nFTuYpve9Y5WWBek42IJkotLwGQCLcBGAs/s1600/34.png", "https://1.bp.blogspot.com/-AAFmlBuLJXs/Wa55wKVff5I/AAAAAAAABr8/vyvWFRiRM88518Y5CPXMgq4q8dQ6kT2hgCLcBGAs/s1600/35.png", "https://2.bp.blogspot.com/-BxijsHQgX3M/Wa55wlM_d0I/AAAAAAAABsA/epH7j-wqQUsMRmYjG3yZqH_jWEQ_vzN0ACLcBGAs/s1600/36.png", "https://1.bp.blogspot.com/-WBFBNztwGGg/Wa55w7L6t2I/AAAAAAAABsE/4m4wrNGLFoY_UQh4syX8TkoFQYQ14fgAACLcBGAs/s1600/37.png", "https://3.bp.blogspot.com/-RdeCT6Rphrg/Wa55w93BsII/AAAAAAAABsI/AXCNwiNgr0Ijr8dMnfvN7mMQtYfmpLMZgCLcBGAs/s1600/38.png", "https://2.bp.blogspot.com/-lHjgL0FlAHE/Wa55x_yjTLI/AAAAAAAABsM/4xWEHvaPiEknT9YceFp4Z41o2kSNNPXCACLcBGAs/s1600/39.png", "https://4.bp.blogspot.com/-wTdl4IjPFys/Wa55yYFOtoI/AAAAAAAABsU/R4Ja7GZfEJUvHc-Kv-119ootbHSxatZTgCLcBGAs/s1600/40.png", "https://2.bp.blogspot.com/-K8a9xS1ir70/Wa55yjnpViI/AAAAAAAABsY/p52v-5AE-iICLRBjzd_x9iGCLik_6-P6wCLcBGAs/s1600/41.png", "https://2.bp.blogspot.com/-6Q5KK1MFsoE/Wa55zT_3g2I/AAAAAAAABsc/IOLZavg6N8IJRkyfwZ7D2Mn70o8VvznRQCLcBGAs/s1600/42.png", "https://1.bp.blogspot.com/-5z1zR6jQXos/Wa55zf-j5fI/AAAAAAAABsg/Xmz_JK1EAacY_H2_Ej4GKncpLHgr-HegwCLcBGAs/s1600/43.png"]   
+        sliderAudio.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(gesture:))))
+        
+        let dataSource = self.dataSource
+        
+        let items = Observable.just([
+            SectionModel(model: "Thượng Toạ Thích Chân Quang", items: [
+                "Sự Giấu Mặt Của Luật Nhân Quả",
+                "Nhân Quả Giàu Nghèo",
+                ]),
+            SectionModel(model: "Thầy Thích Trí Thoát", items: [
+                "Nhân Quả 3 Đời",
+                ]),
+            ])
+        
+        
+        items
+            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
+        
+        tableView.rx
+            .itemSelected
+            .map { indexPath in
+                return (indexPath, dataSource[indexPath])
+            }
+            .subscribe(onNext: { pair in
+                if pair.0 == [0, 0] {
+                    self.playAudio(value: "1")
+                }else if pair.0 == [0, 1] {
+                    self.playAudio(value: "2")
+                }else if pair.0 == [1, 0] {
+                    self.playAudio(value: "3")
+                }else {
+                    self.playAudio(value: "1")
+                }
+                self.songName = pair.1
+                self.updateDuration()
+            })
+            .disposed(by: disposeBag)
+        
+        tableView.rx
+            .setDelegate(self)
+            .disposed(by: disposeBag)
+        
+        playBackgroundMusic()
         
     }
     
@@ -38,54 +102,80 @@ class TranhNhanQua4VC: BaseViewController {
         super.viewWillAppear(animated)
         animateTable(tableView: tableView)
     }
-
-}
-
-extension TranhNhanQua4VC: UITableViewDelegate, UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return imageURLs.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TranhNhanQuaCell4 else {
-            return UITableViewCell()
+    func playAudio(value : String) {
+        if let mp3String = Bundle.main.path(forResource: value, ofType: "mp3") {
+            let url = NSURL(fileURLWithPath: mp3String)
+            do {
+                avAudioPlayer = try AVAudioPlayer(contentsOf: url as URL, fileTypeHint: "mp3")
+                avAudioPlayer.play()
+                sliderAudio.maximumValue = Float(avAudioPlayer.duration)
+                print(sliderAudio.maximumValue)
+                showArtWork(avAudioPlayer)
+            }catch {
+                print(error.localizedDescription)
+            }
         }
-        let imageView = cell.viewWithTag(1) as? UIImageView
-        SVProgressHUD.show(withStatus: "Loading...")
-        imageView?.sd_setImage(with: URL(string: imageURLs[indexPath.section]), completed: { (image, error , cacheType , imageURL) in
-            SVProgressHUD.dismiss()
-        })
-        return cell
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        animateCellForRow(cell: cell)
+    @objc public func updateDurationUI(isSeeking: Bool = false) {
+        guard let avAudioPlayer = avAudioPlayer else { return }
+            let curValue = avAudioPlayer.currentTime
+            
+            UIView.animate(withDuration: SLIDER_UPDATE_DURATION, animations: {
+                self.sliderAudio.setValue(Float(curValue), animated: true)
+            })
+            
+            timePlayCurrent = avAudioPlayer.currentTime
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.section)
+    fileprivate func updateDuration(_ force: Bool = false) {
+        if UIApplication.shared.applicationState != .background || force {
+            timer?.invalidate()
+            guard let avAudioPlayer = avAudioPlayer else { return }
+            timer = Timer.scheduledTimer(timeInterval: SLIDER_UPDATE_DURATION, target: self, selector: #selector(updateDurationUI), userInfo: nil, repeats: true)
+            sliderAudio.maximumValue = Float(avAudioPlayer.duration)
+        }
+    }
+    
+    func handleTap(gesture: UITapGestureRecognizer) {
+        guard let avAudioPlayer = avAudioPlayer else { return }
+        //if !isSliding {
+            let xOrigin = gesture.location(in: sliderAudio).x
+            var value = xOrigin
+            value = CGFloat(sliderAudio.maximumValue) * xOrigin / sliderAudio.frame.size.width
+            sliderAudio.setValue(Float(value), animated: true)
+            timePlayCurrent = TimeInterval (sliderAudio.value)
+            avAudioPlayer.currentTime = timePlayCurrent
+            updateDurationUI(isSeeking: true)
+        //} else {
+          //  isSliding = false
+            
+        //}
+    }
+    
+    fileprivate func showArtWork(_ avAudioPlayer: AVAudioPlayer) {
+        let artwork = MPMediaItemArtwork(image: (UIImage(named:"Logo"))!)
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+            MPMediaItemPropertyTitle: songName,
+            MPMediaItemPropertyArtist: "",
+            MPMediaItemPropertyPlaybackDuration: avAudioPlayer.duration,
+            MPMediaItemPropertyArtwork: artwork,
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: avAudioPlayer.currentTime
+        ]
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+        becomeFirstResponder()
+    }
+
+    private func playBackgroundMusic() {
+        try? AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .defaultToSpeaker)
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return cellSpacingHeight
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = UIColor.clear
-        return headerView
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch device {
-        case .phone:      return 640
-        case .pad:        return 1000
-        default:          return 640
-        }
+        return 40
     }
 }

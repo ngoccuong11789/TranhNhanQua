@@ -15,4 +15,6 @@ target 'TranhNhanQua' do
 	pod 'Firebase/Core'
 	pod 'Siren'
 	pod 'FirebaseMessaging', '2.0.0'
+	pod 'RxSwift',    '~> 4.0'
+    	pod 'RxCocoa',    '~> 4.0'
 end

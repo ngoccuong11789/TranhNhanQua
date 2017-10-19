@@ -31,6 +31,9 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - Protobuf (3.4.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
@@ -44,6 +47,8 @@ DEPENDENCIES:
   - Firebase
   - Firebase/Core
   - FirebaseMessaging (= 2.0.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
   - SDWebImage
   - Siren
   - SMWebView
@@ -60,12 +65,14 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   Siren: 33994aad31aab24344689b3a918d0a9d9eede2e2
   SMWebView: 603d4c80f255c75f03a58570f815c5dbdc37bcd1
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 7bf76e15a09142ccb46d314dbdb6592cc632e3ba
+PODFILE CHECKSUM: 1b2cd3a5a74ff88db3106e28e9ce2b414c7b7c86
 
 COCOAPODS: 1.1.1

@@ -14,7 +14,7 @@ class MenuTableViewController: UITableViewController {
     let cellTitle_1 = NSLocalizedString("Cause & Effect Picture 1", comment: "")
     let cellTitle_2 = NSLocalizedString("Cause & Effect Picture 2", comment: "")
     let cellTitle_3 = NSLocalizedString("Cause & Effect Picture 3", comment: "")
-    let cellTitle_4 = NSLocalizedString("Cause & Effect Picture 4", comment: "")
+    let cellTitle_4 = NSLocalizedString("Audio", comment: "")
     let cellTitle_5 = NSLocalizedString("Buddhist Story", comment: "")
     let cellTitle_6 = NSLocalizedString("Rea Won Kim Website", comment: "")
     let cellTitle_7 = NSLocalizedString("Contributors", comment: "")

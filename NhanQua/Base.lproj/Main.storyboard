@@ -376,42 +376,72 @@
                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-nY-ocH">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="577" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHJ-QM-ylz">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="94" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AHJ-QM-ylz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="403"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="577" id="Vkh-jO-jc0" customClass="TranhNhanQuaCell4" customModule="TranhNhanQua" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="577"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="94" id="Vkh-jO-jc0" customClass="TranhNhanQuaCell4" customModule="TranhNhanQua" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vkh-jO-jc0" id="JEw-Mw-APG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="576.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eZE-1i-DNa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="576.5"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="eZE-1i-DNa" firstAttribute="top" secondItem="JEw-Mw-APG" secondAttribute="top" id="3lV-32-9x7"/>
-                                                <constraint firstAttribute="bottom" secondItem="eZE-1i-DNa" secondAttribute="bottom" id="PfZ-JC-SMq"/>
-                                                <constraint firstItem="eZE-1i-DNa" firstAttribute="leading" secondItem="JEw-Mw-APG" secondAttribute="leading" id="aMY-YR-xfi"/>
-                                                <constraint firstAttribute="trailing" secondItem="eZE-1i-DNa" secondAttribute="trailing" id="jWD-um-rXa"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkn-fb-IXS">
+                                <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zp-iR-X8L" customClass="backgroundSlider" customModule="TranhNhanQua" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="26" width="360" height="12"/>
+                                        <color key="backgroundColor" red="0.69019607843137254" green="0.55294117647058827" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="7YZ-BY-KZ4"/>
+                                        </constraints>
+                                    </view>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="H6x-FD-oRy" customClass="SliderMaterial" customModule="TranhNhanQua" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="34" width="354" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="8CH-af-Osb"/>
+                                        </constraints>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCU-CE-PLj">
+                                        <rect key="frame" x="172" y="46" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ixt-rU-rvi"/>
+                                            <constraint firstAttribute="width" constant="30" id="nDr-8f-5FF"/>
+                                        </constraints>
+                                        <state key="normal" title="Play"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="8Zp-iR-X8L" secondAttribute="trailing" constant="5" id="Hsi-zx-Nru"/>
+                                    <constraint firstItem="H6x-FD-oRy" firstAttribute="top" secondItem="Pkn-fb-IXS" secondAttribute="top" constant="34" id="NTV-af-8hf"/>
+                                    <constraint firstItem="8Zp-iR-X8L" firstAttribute="leading" secondItem="Pkn-fb-IXS" secondAttribute="leading" constant="10" id="Pj5-48-Y4f"/>
+                                    <constraint firstItem="H6x-FD-oRy" firstAttribute="top" secondItem="8Zp-iR-X8L" secondAttribute="bottom" constant="-4" id="Wd9-8t-97z"/>
+                                    <constraint firstAttribute="trailing" secondItem="H6x-FD-oRy" secondAttribute="trailing" constant="8" id="Ztu-pm-P2R"/>
+                                    <constraint firstItem="SCU-CE-PLj" firstAttribute="top" secondItem="8Zp-iR-X8L" secondAttribute="bottom" constant="8" id="f1s-bK-LUb"/>
+                                    <constraint firstItem="SCU-CE-PLj" firstAttribute="centerX" secondItem="Pkn-fb-IXS" secondAttribute="centerX" id="oYq-0Q-ouU"/>
+                                    <constraint firstItem="H6x-FD-oRy" firstAttribute="leading" secondItem="Pkn-fb-IXS" secondAttribute="leading" constant="17" id="tC0-tL-faE"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="AHJ-QM-ylz" secondAttribute="trailing" id="6Bb-IV-9lF"/>
                             <constraint firstAttribute="trailing" secondItem="S3s-nY-ocH" secondAttribute="trailing" id="6aF-kd-TXE"/>
+                            <constraint firstAttribute="trailing" secondItem="Pkn-fb-IXS" secondAttribute="trailing" id="CQ8-1o-ump"/>
                             <constraint firstItem="AHJ-QM-ylz" firstAttribute="top" secondItem="JpP-bj-tcg" secondAttribute="bottom" id="EE0-K6-tLu"/>
-                            <constraint firstItem="PiZ-8E-miR" firstAttribute="top" secondItem="AHJ-QM-ylz" secondAttribute="bottom" id="TJi-xw-SxV"/>
+                            <constraint firstItem="Pkn-fb-IXS" firstAttribute="leading" secondItem="By7-0S-0L9" secondAttribute="leading" id="Mz3-SR-NOs"/>
+                            <constraint firstItem="PiZ-8E-miR" firstAttribute="top" secondItem="AHJ-QM-ylz" secondAttribute="bottom" constant="200" id="TJi-xw-SxV"/>
                             <constraint firstItem="S3s-nY-ocH" firstAttribute="top" secondItem="JpP-bj-tcg" secondAttribute="bottom" id="ZbI-g6-u0T"/>
                             <constraint firstItem="AHJ-QM-ylz" firstAttribute="leading" secondItem="By7-0S-0L9" secondAttribute="leading" id="d3b-3a-uqH"/>
+                            <constraint firstItem="Pkn-fb-IXS" firstAttribute="top" secondItem="AHJ-QM-ylz" secondAttribute="bottom" id="fW2-qa-IW6"/>
                             <constraint firstItem="S3s-nY-ocH" firstAttribute="leading" secondItem="By7-0S-0L9" secondAttribute="leading" id="fsr-kJ-Mpe"/>
                             <constraint firstItem="PiZ-8E-miR" firstAttribute="top" secondItem="S3s-nY-ocH" secondAttribute="bottom" id="olx-Fr-Y33"/>
+                            <constraint firstItem="PiZ-8E-miR" firstAttribute="top" secondItem="Pkn-fb-IXS" secondAttribute="bottom" id="wfX-8Y-aNO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cause &amp; Effect Picture 4" id="Ddh-E2-VJp">
@@ -419,6 +449,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuBarBtn" destination="0On-ei-p8a" id="DYm-VJ-Tca"/>
+                        <outlet property="sliderAudio" destination="H6x-FD-oRy" id="1jW-UP-eSh"/>
                         <outlet property="tableView" destination="AHJ-QM-ylz" id="lD5-9w-TLf"/>
                     </connections>
                 </viewController>
